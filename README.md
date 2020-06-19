@@ -24,8 +24,8 @@ $apiClient = ApiFactory::makeApiClientWithApiKey('api_key', $config);
 try {
     $call = $apiClient->callApi()->getSimpleCall();
     $call->setOperatorFirst();
-    $call->setContactPhone('71111111111');
-    $call->setOperatorPhone('72222222222');
+    $call->setContactPhoneNumber('71111111111');
+    $call->setOperatorPhoneNumber('72222222222');
     ...
     $callSessionEntity = $call->execute();
 } catch (CBH\UiscomClient\Exceptions\BaseException $e) {
